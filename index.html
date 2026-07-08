@@ -3,79 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Profissão do Futuro</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            font-family: 'Segoe UI', system-ui, sans-serif;
-        }
-    </style>
+    <title>Minha Profissão do Futuro - Bombeiro</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body>
 
-    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-12">
-        <div class="max-w-4xl mx-auto text-center px-6">
-            <h1 class="text-5xl font-bold mb-3">Minha Profissão do Futuro</h1>
-            <p class="text-xl opacity-90">Um olhar para o que eu quero ser</p>
-        </div>
+    <header>
+        <h1>🚒 Bombeiro Civil / Militar</h1>
+        <p>Protegendo vidas e salvando o futuro</p>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 py-10">
-
-        <!-- Identificação -->
-        <section class="bg-white rounded-2xl shadow-md p-8 mb-10">
-            <h2 class="text-2xl font-semibold mb-6 text-indigo-700 border-b pb-3">👤 Quem sou eu</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <p><strong>Nome completo:</strong> <span id="nome">[Gustavo da Silva Lenartowicz Machado]</span></p>
-                <p><strong>Escola:</strong> <span id="escola">[Colégio Estadual Dom Pedro II]</span></p>
-                <p><strong>Série/Turma:</strong> <span id="turma">[3°A]</span></p>
-                <p><strong>Profissão escolhida:</strong> <span class="font-semibold text-indigo-600" id="profissao">[Bombeiro Militar]</span></p>
-            </div>
-        </section>
-
-        <!-- Explicação da profissão -->
-        <section class="bg-white rounded-2xl shadow-md p-8 mb-10">
-            <h2 class="text-2xl font-semibold mb-6 text-indigo-700">📘 Sobre a Profissão</h2>
-            <p id="explicacao" class="leading-relaxed text-gray-700">
-                [O bombeiro é o profissional responsável por salvar vidas e proteger as pessoas em situações de emergência. Sua principal missão é combater incêndios, realizar resgates e prestar primeiros socorros em acidentes.
-Essa profissão é muito importante porque os bombeiros são os primeiros a chegar quando acontece algum desastre, como incêndios, enchentes, desabamentos ou acidentes de trânsito. Eles ajudam a salvar vidas e a diminuir os danos.
-No dia a dia, o bombeiro atende chamadas de emergência, apaga incêndios, resgata pessoas presas ou feridas, dá primeiros socorros e também faz inspeções para prevenir acidentes. Além disso, ele treina bastante para estar sempre preparado fisicamente e tecnicamente.]
+    <main>
+        <div id="intro">
+            <h2 style="text-align: center; color: #c8102e;">Olá, eu sou Gustavo da Silva Lenartowicz Machado</h2>
+            <p style="text-align: center; font-size: 1.2rem;">
+                Bem-vindo ao meu site sobre a profissão que escolhi para o futuro.
             </p>
-        </section>
+            <button class="btn-ver" onclick="mostrarInformacoes()">
+                Ver Informações sobre a Profissão
+            </button>
+        </div>
 
-        <!-- Pontos positivos -->
-        <section class="bg-white rounded-2xl shadow-md p-8 mb-10">
-            <h2 class="text-2xl font-semibold mb-6 text-emerald-600">✅ Pontos Positivos</h2>
-            <ul id="positivos" class="list-disc pl-6 space-y-3 text-gray-700">
-                <li>[Salva vidas todos os dias – É uma profissão que faz diferença real na vida das pessoas.]</li>
-                <li>[Muito respeito da sociedade – Os bombeiros são vistos como heróis pela população.]</li>
-                <li>[Boa remuneração e benefícios – Na maioria das corporações, tem salário bom, plano de saúde e estabilidade.]</li>
-            </ul>
-        </section>
+        <div id="conteudo" class="info">
+            <!-- Identificação -->
+            <section>
+                <h2>👤 Quem sou eu</h2>
+                <p><strong>Nome:</strong> Gustavo da Silva Lenartowicz Machado</p>
+                <p><strong>Escola:</strong> Colégio Estadual Dom Pedro II</p>
+                <p><strong>Série/Turma:</strong> 3°A</p>
+                <p><strong>Profissão escolhida:</strong> <strong>Bombeiro</strong></p>
+            </section>
 
-        <!-- Pontos negativos -->
-        <section class="bg-white rounded-2xl shadow-md p-8 mb-10">
-            <h2 class="text-2xl font-semibold mb-6 text-red-600">⚠️ Pontos Negativos</h2>
-            <ul id="negativos" class="list-disc pl-6 space-y-3 text-gray-700">
-                <li>[Alto risco de vida – Trabalha diariamente exposto a perigo (fogo, fumaça, desabamentos).]</li>
-                <li>[Horários difíceis – Trabalha em escalas de 24 horas, inclusive feriados e madrugadas.]</li>
-                <li>[Exige muito esforço físico – Precisa estar sempre em excelente forma física.]</li>
-            </ul>
-        </section>
+            <!-- Sobre a profissão -->
+            <section>
+                <h2>📘 Sobre a Profissão</h2>
+                <p>O bombeiro é o profissional responsável por salvar vidas e proteger as pessoas em situações de emergência. Sua principal missão é combater incêndios, realizar resgates e prestar primeiros socorros em acidentes.</p>
+                <p>Essa profissão é muito importante porque os bombeiros são os primeiros a chegar quando acontece algum desastre, ajudando a salvar vidas e a diminuir os danos.</p>
+            </section>
 
-        <!-- Motivo da escolha -->
-        <section class="bg-white rounded-2xl shadow-md p-8">
-            <h2 class="text-2xl font-semibold mb-6 text-indigo-700">❤️ Por que escolhi esta profissão?</h2>
-            <p id="motivo" class="leading-relaxed text-gray-700">
-                [Essa é uma profissão perigosa em certos momentos, que ajuda pessoas e soluciona problemas. Além disso, é a profissão que eu gostava quando pequeno.]
-            </p>
-        </section>
+            <!-- Pontos positivos -->
+            <section>
+                <h2>✅ Pontos Positivos</h2>
+                <ul>
+                    <li>Salva vidas todos os dias</li>
+                    <li>É muito respeitado pela sociedade</li>
+                    <li>Trabalho dinâmico e desafiador</li>
+                    <li>Boa remuneração e estabilidade</li>
+                </ul>
+            </section>
 
+            <!-- Pontos negativos -->
+            <section>
+                <h2>⚠️ Pontos Negativos</h2>
+                <ul>
+                    <li>Alto risco de vida</li>
+                    <li>Horários difíceis (24h de plantão)</li>
+                    <li>Exige excelente condicionamento físico</li>
+                    <li>Pressão emocional alta</li>
+                </ul>
+            </section>
+
+            <!-- Motivo da escolha -->
+            <section>
+                <h2>❤️ Por que escolhi ser Bombeiro?</h2>
+                <p>Quero ajudar as pessoas em momentos de dificuldade e ser útil para a sociedade, atuando como um herói da vida real.</p>
+            </section>
+
+            <button class="btn-ver" onclick="voltarInicio()" style="background: #555;">
+                ← Voltar ao Início
+            </button>
+        </div>
     </main>
 
-    <footer class="bg-gray-900 text-white text-center py-8 mt-12">
-        <p class="text-sm">© 2026 - Projeto de Laboratório • Profissão do Futuro</p>
-    </footer>
+    <script>
+        function mostrarInformacoes() {
+            document.getElementById('intro').style.display = 'none';
+            document.getElementById('conteudo').style.display = 'block';
+        }
+
+        function voltarInicio() {
+            document.getElementById('intro').style.display = 'block';
+            document.getElementById('conteudo').style.display = 'none';
+        }
+    </script>
 
 </body>
 </html>
